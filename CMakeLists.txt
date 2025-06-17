@@ -5,4 +5,5 @@ find_package(Rock)
 set(ROCK_TEST_ENABLED ON)
 
 rock_init(trajectory_follower 0.1)
+rock_feature(NOCURDIR)
 rock_standard_layout()
