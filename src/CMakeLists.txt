@@ -1,3 +1,5 @@
+rock_find_cmake(Boost COMPONENTS system serialization REQUIRED)
+
 rock_library(trajectory_follower
     SOURCES
         Controller.cpp
@@ -19,4 +21,7 @@ rock_library(trajectory_follower
         eigen3
         base-types
         base-logging
+    DEPS
+        Boost::system
+        Boost::serialization
 )
